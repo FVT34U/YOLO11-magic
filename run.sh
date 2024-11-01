@@ -9,8 +9,8 @@ docker run \
         -v $(pwd):/wd \
         -v /home/${USER}:/home/${USER} \
         --shm-size=10gb \
-        --name yolo11_${USER}_${CURDIRNAME} \
+        --name ${USER}_${CURDIRNAME}_detection \
         ${USER}_${CURDIRNAME} \
 
 sleep 1
-docker logs yolo11_${USER}_${CURDIRNAME}
+docker logs ${USER}_${CURDIRNAME}_detection
